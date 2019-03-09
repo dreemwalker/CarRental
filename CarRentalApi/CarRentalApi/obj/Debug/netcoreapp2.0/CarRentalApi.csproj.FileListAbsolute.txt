@@ -1,0 +1,11 @@
+C:\Users\Dalatar\source\repos\CarRentalApi\CarRentalApi\bin\Debug\netcoreapp2.0\CarRentalApi.deps.json
+C:\Users\Dalatar\source\repos\CarRentalApi\CarRentalApi\bin\Debug\netcoreapp2.0\CarRentalApi.runtimeconfig.json
+C:\Users\Dalatar\source\repos\CarRentalApi\CarRentalApi\bin\Debug\netcoreapp2.0\CarRentalApi.runtimeconfig.dev.json
+C:\Users\Dalatar\source\repos\CarRentalApi\CarRentalApi\bin\Debug\netcoreapp2.0\CarRentalApi.dll
+C:\Users\Dalatar\source\repos\CarRentalApi\CarRentalApi\bin\Debug\netcoreapp2.0\CarRentalApi.pdb
+C:\Users\Dalatar\source\repos\CarRentalApi\CarRentalApi\obj\Debug\netcoreapp2.0\CarRentalApi.csprojResolveAssemblyReference.cache
+C:\Users\Dalatar\source\repos\CarRentalApi\CarRentalApi\obj\Debug\netcoreapp2.0\CarRentalApi.csproj.CoreCompileInputs.cache
+C:\Users\Dalatar\source\repos\CarRentalApi\CarRentalApi\obj\Debug\netcoreapp2.0\CarRentalApi.AssemblyInfoInputs.cache
+C:\Users\Dalatar\source\repos\CarRentalApi\CarRentalApi\obj\Debug\netcoreapp2.0\CarRentalApi.AssemblyInfo.cs
+C:\Users\Dalatar\source\repos\CarRentalApi\CarRentalApi\obj\Debug\netcoreapp2.0\CarRentalApi.dll
+C:\Users\Dalatar\source\repos\CarRentalApi\CarRentalApi\obj\Debug\netcoreapp2.0\CarRentalApi.pdb
