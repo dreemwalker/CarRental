@@ -14,7 +14,7 @@ namespace CarRentalApi.Models
             : base(options)
         {
         }
-
+        
         public virtual DbSet<Car> Cars { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<User> Users { get; set; }
@@ -27,7 +27,7 @@ namespace CarRentalApi.Models
             }
         }
 
-        /* protected override void OnModelCreating(ModelBuilder modelBuilder)
+         protected override void OnModelCreating(ModelBuilder modelBuilder)
          {
              modelBuilder.HasAnnotation("ProductVersion", "2.2.2-servicing-10034");
 
@@ -53,18 +53,7 @@ namespace CarRentalApi.Models
                  entity.Property(e => e.BeginDate).HasColumnType("date");
 
                  entity.Property(e => e.EndDate).HasColumnType("date");
-
-                 entity.HasOne(d => d.Car)
-                     .WithMany(p => p.Orders)
-                     .HasForeignKey(d => d.CarId)
-                     .OnDelete(DeleteBehavior.ClientSetNull)
-                     .HasConstraintName("FK_Orders_Cars");
-
-                 entity.HasOne(d => d.User)
-                     .WithMany(p => p.Orders)
-                     .HasForeignKey(d => d.UserId)
-                     .OnDelete(DeleteBehavior.ClientSetNull)
-                     .HasConstraintName("FK_Orders_Users");
+               
              });
 
              modelBuilder.Entity<User>(entity =>
@@ -83,6 +72,6 @@ namespace CarRentalApi.Models
                      .IsRequired()
                      .HasMaxLength(200);
              });
-         }*/
+         }
     }
 }

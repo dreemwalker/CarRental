@@ -16,7 +16,7 @@ namespace CarRentalApi.Models
         public string Сlass { get; set; }
         public int Year { get; set; }
         public string RegistrationNumber { get; set; }
-
+        
         
     }
 }

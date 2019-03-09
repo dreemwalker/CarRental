@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
-
+using Microsoft.EntityFrameworkCore;
 namespace CarRentalApi.Controllers
 {
     [Route("api/[controller]")]
@@ -16,9 +16,26 @@ namespace CarRentalApi.Controllers
         }
         // GET: api/<controller>
         [HttpGet]
-        public IEnumerable<Order> Get()
+        public IEnumerable<object> Get()
         {
-            return db.Orders.ToList();
+
+            var result = from order in db.Orders
+                         join car in db.Cars on order.CarId equals car.Id
+                         join user in db.Users on order.UserId equals user.Id
+                         select new
+                         {
+                             order.Id,
+                             order.BeginDate,
+                             order.EndDate,
+                             order.Comment,
+                             order.CarId,
+                             order.UserId,
+                             user.Name,
+                             user.Surname,
+                             car.Brand,
+                             car.Model
+                         };
+            return result;
         }
 
         // GET api/<controller>/5
