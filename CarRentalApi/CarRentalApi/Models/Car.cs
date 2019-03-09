@@ -5,11 +5,7 @@ namespace CarRentalApi.Models
 {
     public partial class Car
     {
-        //public Car()
-        //{
-        //    Orders = new HashSet<Order>();
-        //}
-
+       
         public int Id { get; set; }
         public string Brand { get; set; }
         public string Model { get; set; }

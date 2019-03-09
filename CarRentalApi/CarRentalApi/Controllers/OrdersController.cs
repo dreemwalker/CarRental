@@ -47,20 +47,41 @@ namespace CarRentalApi.Controllers
 
         // POST api/<controller>
         [HttpPost]
-        public void Post([FromBody]string value)
+        public IActionResult Post([FromBody]Order order)
         {
+            if (ModelState.IsValid)
+            {
+                db.Orders.Add(order);
+                db.SaveChanges();
+                return Ok(order);
+            }
+            return BadRequest(ModelState);
         }
 
-        // PUT api/<controller>/5
+        // Update by Order by Id
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        public IActionResult Put(int id, [FromBody]Order order)
         {
+            if (ModelState.IsValid)
+            {
+                db.Update(order);
+                db.SaveChanges();
+                return Ok(order);
+            }
+            return BadRequest(ModelState);
         }
 
-        // DELETE api/<controller>/5
+        // DELETE Order by id
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
+            Order order = db.Orders.FirstOrDefault(x => x.Id == id);
+            if (order != null)
+            {
+                db.Orders.Remove(order);
+                db.SaveChanges();
+            }
+            return Ok(order);
         }
     }
 }
