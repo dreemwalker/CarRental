@@ -2,10 +2,13 @@ D:\work\TestTask\CarRentalApi\CarRentalApi\bin\Debug\netcoreapp2.2\CarRentalApi.
 D:\work\TestTask\CarRentalApi\CarRentalApi\bin\Debug\netcoreapp2.2\CarRentalApi.runtimeconfig.json
 D:\work\TestTask\CarRentalApi\CarRentalApi\bin\Debug\netcoreapp2.2\CarRentalApi.runtimeconfig.dev.json
 D:\work\TestTask\CarRentalApi\CarRentalApi\bin\Debug\netcoreapp2.2\CarRentalApi.dll
-D:\work\TestTask\CarRentalApi\CarRentalApi\obj\Debug\netcoreapp2.2\CarRentalApi.csprojResolveAssemblyReference.cache
 D:\work\TestTask\CarRentalApi\CarRentalApi\obj\Debug\netcoreapp2.2\CarRentalApi.csproj.CoreCompileInputs.cache
 D:\work\TestTask\CarRentalApi\CarRentalApi\obj\Debug\netcoreapp2.2\CarRentalApi.RazorAssemblyInfo.cache
 D:\work\TestTask\CarRentalApi\CarRentalApi\obj\Debug\netcoreapp2.2\CarRentalApi.RazorAssemblyInfo.cs
 D:\work\TestTask\CarRentalApi\CarRentalApi\obj\Debug\netcoreapp2.2\CarRentalApi.AssemblyInfoInputs.cache
 D:\work\TestTask\CarRentalApi\CarRentalApi\obj\Debug\netcoreapp2.2\CarRentalApi.AssemblyInfo.cs
 D:\work\TestTask\CarRentalApi\CarRentalApi\obj\Debug\netcoreapp2.2\CarRentalApi.RazorTargetAssemblyInfo.cache
+D:\work\TestTask\CarRentalApi\CarRentalApi\bin\Debug\netcoreapp2.2\CarRentalApi.pdb
+D:\work\TestTask\CarRentalApi\CarRentalApi\obj\Debug\netcoreapp2.2\CarRentalApi.dll
+D:\work\TestTask\CarRentalApi\CarRentalApi\obj\Debug\netcoreapp2.2\CarRentalApi.pdb
+D:\work\TestTask\CarRentalApi\CarRentalApi\obj\Debug\netcoreapp2.2\CarRentalApi.csprojResolveAssemblyReference.cache

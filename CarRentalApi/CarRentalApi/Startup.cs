@@ -8,7 +8,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-
+using Microsoft.EntityFrameworkCore;
+using CarRentalApi.Models;
 namespace CarRentalApi
 {
     public class Startup
@@ -23,6 +24,8 @@ namespace CarRentalApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            string con = "Data Source=KELPI\\SQLEXPRESS;Initial Catalog=CarRental;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            services.AddDbContext<CarRentalContext>(options => options.UseSqlServer(con));
             services.AddMvc();
         }
 

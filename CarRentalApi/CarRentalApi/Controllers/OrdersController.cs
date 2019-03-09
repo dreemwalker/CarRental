@@ -1,41 +1,46 @@
-﻿using System;
+﻿using CarRentalApi.Models;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 
 namespace CarRentalApi.Controllers
 {
     [Route("api/[controller]")]
-    public class ValuesController : Controller
+    public class OrdersController : Controller
     {
-        // GET api/values
-        [HttpGet]
-        public IEnumerable<string> Get()
+        CarRentalContext db;
+        public OrdersController(CarRentalContext context)
         {
-            return new string[] { "value1", "value2" };
+            this.db = context;
+
+        }
+        // GET: api/<controller>
+        [HttpGet]
+        public IEnumerable<Order> Get()
+        {
+            return db.Orders.ToList();
         }
 
-        // GET api/values/5
+        // GET api/<controller>/5
         [HttpGet("{id}")]
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST api/values
+        // POST api/<controller>
         [HttpPost]
         public void Post([FromBody]string value)
         {
         }
 
-        // PUT api/values/5
+        // PUT api/<controller>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody]string value)
         {
         }
 
-        // DELETE api/values/5
+        // DELETE api/<controller>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
