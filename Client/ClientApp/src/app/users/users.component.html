@@ -1,24 +1,21 @@
-<!--<ul>
-  li *ngFor="let user of users">
-  <li *ngFor="let user of users" >
-  <p>Id: {{user?.id}}</p>
-  <p>Name: {{user?.name}}</p>
-  <p>Username : {{user?.username}}</p>
-  </li>
-</ul>-->
 <table class="table table-striped">
     <thead>
       <tr>
         <th>Id</th>
         <th>Name</th>
-        <th>Username</th>
+        <th>Surname</th>
+        <th>Birth</th>
+        <th>License number</th>
       </tr>
     </thead>
     <tbody>
+
       <tr *ngFor="let user of users">
         <td>{{user?.id}}</td>
         <td>{{user?.name}}</td>
-        <td> {{user?.username}}</td>
+        <td> {{user?.surname}}</td>
+        <td> {{user?.birth}}</td>
+        <td> {{user?.licenseNumber}}</td>
       </tr>
       
     </tbody>

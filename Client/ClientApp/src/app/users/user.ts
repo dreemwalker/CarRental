@@ -1,5 +1,7 @@
 export class User{
     id: number;
     name: string;
-    username:string;
+    surname:string;
+    birth:string;
+    licenseNumber:string;
 }

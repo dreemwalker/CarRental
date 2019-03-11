@@ -1,3 +1,24 @@
-<p>
-  cars works!
-</p>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Brand</th>
+        <th>Model</th>
+        <th>Class</th>
+        <th>Year</th>
+        <th>Registration Number</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let car of cars">
+        <td>{{car?.id}}</td>
+        <td>{{car?.brand}}</td>
+        <td>{{car?.model}}</td>
+        <td>{{car?.class}}</td>
+        <td>{{car?.year}}</td>
+        <td>{{car?.registrationNumber}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
