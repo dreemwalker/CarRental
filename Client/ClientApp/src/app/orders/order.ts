@@ -17,3 +17,13 @@ export class CarCombo
 {
     id:number;
 }
+export class OrderIns
+{
+    id:number;
+    carId:number;
+    userId:number;
+    beginDate:string;
+    endDate:string;
+    comment:string;
+}
+

@@ -1,14 +1,15 @@
+<input id="myInput" type="text" placeholder="Search..">
 <table class="table table-striped">
     <thead>
       <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Surname</th>
-        <th>Birth</th>
-        <th>License number</th>
+        <th onclick="sortTable(0)">Id</th>
+        <th onclick="sortTable(1)">Name</th>
+        <th onclick="sortTable(2)">Surname</th>
+        <th onclick="sortTable(3)">Birth</th>
+        <th onclick="sortTable(4)">License number</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody id="myTable">
 
       <tr *ngFor="let user of users">
         <td>{{user?.id}}</td>

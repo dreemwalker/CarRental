@@ -1,20 +1,57 @@
 
+
+ <!--
+   <form>
+    <div class="form-group">
+        <label>car </label>
+        <input class="form-control" type="number" name="carId" [(ngModel)]="orderpost.carId" />
+    </div>
+    
+    
+    <div class="form-group">
+        <label>user</label>
+        <input class="form-control" type="number" name="userId" [(ngModel)]="orderpost.userId" />
+    </div>
+    <div class="form-group">
+      <label>begin date</label>
+      <input class="form-control" type="number" name="beginDate" [(ngModel)]="orderpost.beginDate" />
+    </div>
+    <div class="form-group">
+      <label>end date</label>
+      <input class="form-control" type="number" name="endDate" [(ngModel)]="orderpost.endDate" />
+    </div>
+    <div class="form-group">
+      <label>comment</label>
+      <input class="form-control" type="number" name="comment" [(ngModel)]="orderpost.comment" />
+    </div>
+    <div class="form-group">
+    
+        <button class="btn btn-default" (click)="submit(orderpost)">Отправить</button>
+    </div>
+    <div *ngIf="done">
+        <div>Получено от сервера:</div>
+    </div>
+    
+
+</form>
+-->
+<input id="myInput" type="text" placeholder="Search..">
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>Id</th>
-      <th>Id</th>
-      <th>Id</th>
-      <th>Id</th>
-      <th>Id</th>
-      <th>Id</th>
-      <th>Id</th>
-      <th>Id</th>
-      <th>Id</th>
-      <th>Id</th>
+      <th onclick="sortTable(0)">id</th>
+      <th onclick="sortTable(1)">carId</th>
+      <th onclick="sortTable(2)">userId</th>
+      <th onclick="sortTable(3)">name</th>
+      <th onclick="sortTable(4)">surname</th>
+      <th onclick="sortTable(5)">brand</th>
+      <th onclick="sortTable(6)">model</th>
+      <th onclick="sortTable(7)">beginDate</th>
+      <th onclick="sortTable(8)">endDate</th>
+      <th onclick="sortTable(9)">comment</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody id="myTable">
 
     <tr *ngFor="let order of orders">
       <td>{{order?.id}}</td>

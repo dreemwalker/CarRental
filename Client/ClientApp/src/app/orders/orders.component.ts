@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Order,UserCombo,CarCombo } from "./order";
+import {Order,UserCombo,CarCombo,OrderIns } from "./order";
 import {HttpService} from "./orders.service";
 
 @Component({
@@ -13,6 +13,7 @@ export class OrdersComponent implements OnInit {
   constructor(private httpService: HttpService){}
   userlist:UserCombo[];
   carlist:CarCombo[];
+  orderpost:OrderIns; //object for insert
   ngOnInit() {
     this.httpService.getOrders().subscribe(value => this.orders= value);
   }
