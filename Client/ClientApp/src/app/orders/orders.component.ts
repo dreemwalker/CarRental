@@ -10,12 +10,24 @@ import {HttpService} from "./orders.service";
 })
 export class OrdersComponent implements OnInit {
   orders: Order[];
-  constructor(private httpService: HttpService){}
   userlist:UserCombo[];
   carlist:CarCombo[];
-  orderpost:OrderIns; //object for insert
+  orderpost:OrderIns; //object for requests;
+  
+  constructor(private httpService: HttpService){}
+  
   ngOnInit() {
     this.httpService.getOrders().subscribe(value => this.orders= value);
+  }
+
+  addOrder(){
+
+  }
+  deleteOrder(){
+
+  }
+  updateOrder(){
+    
   }
 
 }
