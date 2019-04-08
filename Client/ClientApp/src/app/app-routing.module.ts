@@ -6,12 +6,14 @@ import {UsersComponent} from './users/users.component';
 import {CarsComponent} from './cars/cars.component';
 import {OrdersComponent} from './orders/orders.component';
 import {HomeComponent} from './home/home.component';
+
 const routes: Routes = [
   {path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'cars', component: CarsComponent },
   { path: 'users', component: UsersComponent },
   { path: 'orders', component: OrdersComponent },
+
   { path: '**', component: ErrorComponent }
 ];
 

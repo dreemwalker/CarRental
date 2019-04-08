@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { Observable } from 'rxjs';
-import {Order,UserCombo,CarCombo, OrderIns} from './order';
+import {Order,UserCombo,CarCombo} from './order';
 import { HttpHeaders } from '@angular/common/http';
 
 const httpOptions = {
@@ -27,17 +27,17 @@ export class HttpService{
      //get cars data
     getCarList():Observable<CarCombo[]>
     {
-        return this.http.get<UserCombo[]>("http://localhost:52460/api/cars")
+        return this.http.get<CarCombo[]>("http://localhost:52460/api/cars")
     }
-   postOrder(order:OrderIns)
+   postOrder(order:Order)
     {
         const body = {carId: order.carId, userId: order.userId, beginDate:order.beginDate, endDate:order.endDate, comment:order.comment};
-        return this.http.post('http://localhost:60820/api/values', body,httpOptions); 
+        return this.http.post('http://localhost:52460/api/orders', body,httpOptions); 
     }
-    putOrder(order:OrderIns)
+    putOrder(order:Order)
     {
         const body = {carId: order.carId, userId: order.userId, beginDate:order.beginDate, endDate:order.endDate, comment:order.comment};
-        return this.http.put('http://localhost:60820/api/values', body,httpOptions); 
+        return this.http.put('http://localhost:52460/api/orders', body,httpOptions); 
     }
     deleteOrder(id:number)
     {

@@ -13,6 +13,11 @@ export class CarsComponent implements OnInit {
 
   ngOnInit() {
     this.httpService.getData().subscribe(value => this.cars= value);
+   
+  }
+  ss()
+  {
+    console.log(this.cars);
   }
 
 }

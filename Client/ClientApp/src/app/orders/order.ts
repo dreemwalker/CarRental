@@ -11,11 +11,21 @@ export class Order{
     comment:string;
 }
 export class UserCombo{
-    id:number;
+    id: number;
+    name: string;
+    surname:string;
+    birth:string;
+    licenseNumber:string;
 }
 export class CarCombo
 {
-    id:number;
+    id: number;
+    brand: string;
+    model:string;
+    class:string;
+    year:number;
+    registrationNumber:string;
+   
 }
 export class OrderIns
 {

@@ -12,16 +12,19 @@ export class OrdersComponent implements OnInit {
   orders: Order[];
   userlist:UserCombo[];
   carlist:CarCombo[];
-  orderpost:OrderIns; //object for requests;
+  orderpost:Order=new Order; //object for requests;
   
   constructor(private httpService: HttpService){}
   
   ngOnInit() {
     this.httpService.getOrders().subscribe(value => this.orders= value);
+    this.httpService.getCarList().subscribe(value => this.carlist= value);
+    this.httpService.getUserList().subscribe(value=>this.userlist=value);
   }
 
-  addOrder(){
-
+  addOrder(order:Order){
+    console.log(order);
+    this.httpService.postOrder(order);
   }
   deleteOrder(){
 
